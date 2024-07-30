@@ -9,7 +9,7 @@ import Stories from "@/components/stories";
 
 interface IHomeProps {}
 
-const Home: React.FunctionComponent<IHomeProps> = (props) => {
+const Home: React.FunctionComponent<IHomeProps> = () => {
   const {user}=useUserAuth();
   const [data,setData]=React.useState<DocumentResponse[]>([]);
   const getAllPost=async () => {
